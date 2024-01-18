@@ -1,0 +1,6 @@
+src/
+devel/
+build/
+logs/
+.vscode/
+.cat*
