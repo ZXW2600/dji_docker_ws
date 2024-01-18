@@ -6,8 +6,13 @@
 #### 1. 构建运行依赖环境（不含源代码）：
 
 ```shell
-    cd ./docker/ros_pytorch/
-    ./build.sh
+cd ./docker/ros_pytorch/
+./build.sh
+```
+如果编译不通过，如curl\wget报错，请使用代理编译
+```shell
+cd ./docker/ros_pytorch/
+docker build --build-arg http_proxy="http://ip:port"  -t rmua_devel .
 ```
 
 #### 2. 复制工程代码到src文件夹，完整的目录结构如下
