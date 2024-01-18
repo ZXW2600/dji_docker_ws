@@ -33,3 +33,4 @@ RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 # pip install circle detector dependence
 RUN bash -c 'echo -e "numpy<=1.23.5\n onnx\n onnxsim\n opencv-python\n torch\n torchvision\n casadi" > /tmp/req.txt && pip3 install -r /tmp/req.txt'
 
+RUN apt install -y ros-noetic-cv-bridge

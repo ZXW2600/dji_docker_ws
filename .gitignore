@@ -4,3 +4,6 @@ build/
 logs/
 .vscode/
 .cat*
+*.zip
+*.tar.gz
+*.tar
